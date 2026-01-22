@@ -1,0 +1,7 @@
+{
+  "name": "FleetOptima: Driver Performance Analytics",
+  "description": "A comprehensive reporting tool for analyzing driver performance, load distribution, and route efficiency for Woolworths logistics operations.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

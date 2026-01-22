@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FleetOptima Analytics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+        body {
+          background-color: white !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        main {
+          padding-top: 0 !important;
+          margin: 0 !important;
+          width: 100% !important;
+        }
+        .max-w-7xl {
+          max-width: 100% !important;
+        }
+        .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl, .shadow-2xl {
+          box-shadow: none !important;
+          border: 1px solid #e2e8f0 !important;
+        }
+        .rounded-2xl, .rounded-3xl, .rounded-xl {
+          border-radius: 4px !important;
+        }
+        .bg-indigo-900 {
+          background-color: #312e81 !important; /* Indigo-900 */
+          color: white !important;
+        }
+        /* Ensure charts take up full width on paper */
+        .recharts-responsive-container {
+          width: 100% !important;
+          height: 300px !important;
+          display: block !important;
+        }
+        .grid {
+          display: block !important;
+        }
+        .grid > div {
+          margin-bottom: 20px !important;
+          page-break-inside: avoid;
+        }
+        /* Page breaks */
+        .driver-detail-row {
+          page-break-inside: avoid;
+        }
+        table {
+          page-break-inside: auto;
+        }
+        tr {
+          page-break-inside: avoid;
+          page-break-after: auto;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+  </body>
+</html>
